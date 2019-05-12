@@ -1,0 +1,21 @@
+<div>
+    <div class="header">Status of the Move</div>
+    
+    <div *ngIf="progress">
+        <mat-horizontal-stepper linear #stepper>
+          <mat-step label="Started Moving" [completed]="progress.started" editable="false">
+              Started Moving
+          </mat-step>
+          <mat-step label="In Travel" [completed]="progress.travel" editable="false">
+              In Travel
+          </mat-step>
+          <mat-step label="Reached City" [completed]="progress.city" editable=false>
+              Reached City
+          </mat-step>
+          <mat-step label="Completed" [completed]="progress.completed" editable=false>
+              Completed
+          </mat-step>
+        
+        </mat-horizontal-stepper>
+        </div>
+</div>

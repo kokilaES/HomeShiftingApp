@@ -1,0 +1,15 @@
+<div>
+    <div class="header">Moved Histories</div>
+    <div *ngIf="historyList">
+      <div class="history-list" *ngFor="let history of historyList">
+        <div class="history-list-date">{{history.date}}</div>
+          <div class="history-list-source">Source: {{history.fromCity}}</div>
+            <div class="history-list-destination">Destination: {{history.toCity}}</div>
+          <div class="history-list-count">Status : {{history.status}}</div>
+          <div class="history-list-country">Amount : {{history.amount}}</div>
+          <div *ngIf="history.status == 'inprogress'"><a href="/progress/11">View Status</a></div>
+      </div>
+      
+    </div>
+    <div class="clear"></div>
+  </div>

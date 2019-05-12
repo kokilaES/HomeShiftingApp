@@ -1,0 +1,29 @@
+@import '../../common/scss/_variables'; 
+@import '../../common/scss/_common'; 
+.header{
+    font-size: 30px;
+    width: 50%;
+    margin: 20px auto;
+    font-weight: bold;
+}
+.history-list{
+    width: 50%;
+    margin: 20px auto;
+    padding: 25px;
+    line-height: 2;
+    text-transform: capitalize;
+    border: 1px solid grey;
+    &-date{
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    &-{
+        margin-left: 10px;
+        line-height: 1.5;
+    }
+    &-name{
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+}

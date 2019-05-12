@@ -1,0 +1,27 @@
+@import '../../common/scss/_variables'; 
+@import '../../common/scss/_common'; 
+.header{
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: bold;
+    
+}
+.city-list{
+    width: 300px;
+    float: left;
+    margin: 20px auto;
+    &-image{
+        height: 100px;
+        width: 100px;
+        float: left;
+    }
+    &-count,&-country,&-name{
+        margin-left: 10px;
+        line-height: 1.5;
+    }
+    &-name{
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+}

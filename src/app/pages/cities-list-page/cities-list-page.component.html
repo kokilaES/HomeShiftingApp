@@ -1,0 +1,16 @@
+<div>
+  <div class="header">Cities</div>
+  <div *ngIf="cityList">
+    <div class="city-list" *ngFor="let city of cityList">
+      <img class="city-list-image" [src]="city.image"/>
+      <div class="float-left">
+        <div class="city-list-name">{{city.name}}</div>
+        <div class="city-list-count">{{city.count}}</div>
+        <div class="city-list-country">{{city.country}}</div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="clear"></div>
+</div>

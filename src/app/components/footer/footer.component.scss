@@ -1,0 +1,16 @@
+@import '../../common/scss/_common'; 
+.footer-container{
+    padding: 50px 20px;
+    border-top: 1px solid #45c6e2;
+    line-height: 2;
+    width: 100%;
+    .footer-list{
+        float: left;
+        margin: 0 20px;
+        width: 20%;
+        li{
+            list-style: none;
+            margin: 5px 0;
+        }
+    }
+}

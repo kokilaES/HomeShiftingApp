@@ -1,0 +1,43 @@
+@import '../../common/scss/_variables'; 
+@import '../../common/scss/_common'; 
+.header-container{
+    height: 500px;
+    background:lightblue url("../../../assets/images/household.jpg") no-repeat fixed center;
+  
+.header {
+    border-bottom: 1px solid white;
+     ul{
+        float: right;
+       li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+        a{
+            color: $theme-grey-color !important;
+        }
+       } 
+
+    }
+}
+    .sub-header{
+        color: $theme-white-color;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        div{
+            margin: 10px 0;
+            &.btn{
+                border-radius: 25px;
+                background: #45c6e2;
+                display: inline-block;
+                padding: 10px 25px;
+                text-transform: uppercase;
+            }
+            &.title-block{
+                font-size: 60px;
+                font-weight: bold;
+            } 
+        }
+        
+    }
+}
